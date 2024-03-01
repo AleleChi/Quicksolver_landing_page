@@ -1,0 +1,245 @@
+.hero {
+  display: flex;
+  height: 1078px;
+  padding: 120px 292.5px 0px 292.5px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  color:  #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+ height: 150px;
+  
+  
+}
+
+.hero-content p {
+    color:  #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px; 
+}
+
+.buttons {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.google-btn,
+.apple-btn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin: 30px;
+   width: fit-content;
+  height: fit-content;
+  
+}
+
+
+.apple-btn img {
+  margin-right: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.apple-btn {
+    background-color:#064A0C;
+    display: flex;
+    width:292px;
+    
+    
+    
+}
+
+.google-btn img{
+    display: flex;
+    width: 292px;
+    background-color:#ffffff;
+    padding: 0px;
+}
+
+.images{
+    display: flex;
+    padding: 60px;
+    justify-content: center;
+    gap: 0;
+    
+}
+
+/* styling the center images */
+
+.left-image {
+    position: relative;
+    top: 10px;
+    left: 40px;
+    width: 304.131px;
+    height: 455px;
+    z-index: 1; 
+}
+
+.middle-image {
+
+    position: relative;
+    top: -12px;
+    z-index: 5; 
+}
+
+.right-image {
+    position: relative;
+    top: 10px;
+    left: -40px;
+    height: 455px;
+    z-index: 1; /* Assign a higher z-index than other images */
+}
+/* Define a keyframe animation */
+@keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Apply the animation to the images */
+  .left-image, .middle-image, .right-image {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Apply the animation on hover */
+  .left-image:hover, .middle-image:hover, .right-image:hover {
+    animation: zoomIn 0.3s ease;
+  }
+  
+  /* Apply the animation on click */
+  .left-image:active, .middle-image:active, .right-image:active {
+    animation: zoomIn 0.3s ease;
+  }
+/* Define a keyframe animation for button hover */
+@keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the animation to the buttons */
+  .download-btn {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Apply the animation on hover */
+  .download-btn:hover {
+    animation: buttonHover 1s infinite; /* Play the animation infinitely */
+  }
+  
+  /* Apply the animation on click */
+  .download-btn:active {
+    animation: buttonHover 0.3s ease; /* Play the animation on click */
+  }
+/* Define a keyframe animation for button hover */
+@keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the animation to the Google and Apple buttons */
+  .google-btn, .apple-btn {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Apply the animation on hover */
+  .google-btn:hover, .apple-btn:hover {
+    animation: buttonHover 1s infinite; /* Play the animation infinitely */
+  }
+  
+  /* Apply the animation on click */
+  .google-btn:active, .apple-btn:active {
+    animation: buttonHover 0.3s ease; /* Play the animation on click */
+  }
+
+  /* Define a keyframe animation for list item hover */
+@keyframes listItemBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Define a keyframe animation for list item click */
+  @keyframes listItemPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the animation to the list items */
+  .nav-list li {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Apply the animation on hover */
+  .nav-list li:hover {
+    animation: listItemBounce 0.5s ease infinite alternate; 
+  }
+  
+  /* Apply the animation on click */
+  .nav-list li:active {
+    animation: listItemPulse 0.5s ease; 
+  }
+
+
+/* Green line */
+.green-line {
+  width: 350px; 
+  max-width: 350px;
+  min-height: 3px;
+  height: 7px; 
+  background-color: #0A7212;
+  margin: 0 auto; 
+  margin-top: -40px; 
+}

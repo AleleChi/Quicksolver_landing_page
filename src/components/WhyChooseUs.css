@@ -1,0 +1,133 @@
+/* WhyChooseUs.css */
+
+.why-choose-us {
+    padding: 50px;
+    background-color: #ededed;
+  }
+  
+  .line {
+    width: 121.68px;
+    height: 3.09px;
+    background-color: #FFD800; 
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 59.81px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 67.02px;
+    text-align: center;
+
+  }
+  
+  .green {
+    color: #0A7212; 
+    
+    
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .images {
+    display: flex;
+    gap: 20px;
+  }
+
+  .icon-1{
+    position: relative;
+    left: 90px;
+    z-index: 2;
+  }
+  
+  .info {
+    flex-grow: 1;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .green-button2 {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #0A7212; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  /* Animation on hover */
+  .green-button2:hover {
+    animation: buttonHover 0.5s forwards; 
+    background-color:  #111511;
+  }
+  
+  /* Animation on click */
+  .green-button2:active {
+    animation: buttonClick 0.1s forwards; 
+  }
+  
+  /* Keyframe animations */
+  @keyframes buttonHover {
+    0% {
+      transform: scale(1); 
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+  }
+  
+  @keyframes buttonClick {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    100% {
+      transform: translateY(2px); /* Move down slightly on click */
+    }
+  }
+  
+ /* WhyChooseUs.css */
+
+.icon-1,
+.icon-2 {
+  /* Initial position */
+  transform: translateY(50px);
+  opacity: 1; /* Ensure images are fully visible initially */
+}
+
+/* Animation on hover */
+.icon-1:hover,
+.icon-2:hover {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition for smooth animation */
+}
+
+/* Animation on click */
+.icon-1:active,
+.icon-2:active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition for smooth animation */
+}

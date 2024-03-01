@@ -1,0 +1,77 @@
+/* LearningAidSection.css */
+
+.learning-aid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    gap: 20px;
+    padding: 50px;
+    
+  }
+  
+  .grid-1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+  }
+  .grid-1:hover {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 165, 0, 0.5);
+}
+  .grid-content {
+    padding: 100px;
+    margin: -20px;
+    font-family: Raleway;
+    line-height: 39px;
+    
+    
+    
+    
+  }
+  .grid-content-h3{
+    padding: 230px;
+    margin: 20px -170px;
+    color:#ffffff;
+    font-size: 20px;
+    
+    
+  }
+  .yellow-line {
+    width: 20%;
+    height: 5px;
+    background-color: #ffd800;
+    margin-bottom: 10px;
+  }
+  
+  .grid h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .grid p {
+    font-size: 16px;
+  }
+  
+  .green-button-2 {
+    background-color: #0a7212;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 308px;
+    height: 60px;
+  }
+  
+  .green-button-2:hover {
+    background-color: #075b0b;
+  }
+  
+  .grid.active {
+    border: 2px solid #ffa500;
+  }
+  

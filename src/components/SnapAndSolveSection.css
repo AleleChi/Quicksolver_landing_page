@@ -1,0 +1,104 @@
+.snap-and-solve-section {
+    background-color: rgb(10, 114, 18);
+    background-image: url('./bg-vector.png');
+    width: 1920px;
+    height: 600px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.content-snap {
+    z-index: 1;
+    color: #ffffff;
+    max-width: 600px;
+    text-align: justify;
+    padding: 30px;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.snap-h2 {
+    font-family: Raleway;
+    font-size: 52px;
+    color: var(--main-whte, #FCFBFB);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px;
+    padding: 20px;
+    position: relative;
+    top: 40px;
+}
+
+.orange-button-4 {
+    background-color: #FFA500;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 50px 0 50px 160px; /* Adjust button position */
+}
+
+.orange-button-4:hover {
+    background-color: #FF7F00;
+}
+
+.background-images-snap {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -455px;
+    right: 300px;
+    animation: slideInImages 1s forwards;
+}
+
+.left-image-app {
+    position: relative;
+    left: 90px;
+    top: -18px;
+}
+
+.center-image-app {
+    position: relative;
+    z-index: 1;
+    width: 390px;
+    height: 500px;
+    top: -18px;
+}
+
+.right-image-app {
+    position: relative;
+    right: 90px;
+    top: -18px;
+}
+
+@keyframes slideInImages {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.left-image-app:hover,
+.center-image-app:hover,
+.right-image-app:hover {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
