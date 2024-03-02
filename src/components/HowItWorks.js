@@ -1,9 +1,13 @@
-// HowItWorks.js
-
 import React from "react";
 import "./HowItWorks.css"; // Import your CSS file for styling
 
 const HowItWorks = () => {
+  // Function to handle scrolling to the hero section
+  const scrollToHero = () => {
+    const heroSection = document.getElementById("hero-section");
+    heroSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="how-it-works">
       <div className="line2"></div>
@@ -39,7 +43,7 @@ const HowItWorks = () => {
             </p>
           </div>
         </div>
-        <button className="orange-button">Download the App</button>
+        <button className="orange-button" onClick={scrollToHero}>Download the App</button>
       </div>
     </section>
   );
