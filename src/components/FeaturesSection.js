@@ -36,7 +36,7 @@ const FeaturesSection = () => {
         
       </div>
       {/* Green button */}
-      <div><button className="green-button">Try Quick Solver Now</button></div>
+      <div className="btn-green"><button className="green-button">Try Quick Solver Now</button></div>
     </section>
   );
 }

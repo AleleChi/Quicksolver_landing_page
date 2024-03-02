@@ -252,3 +252,117 @@
   transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition for smooth animation */
 }
 }
+
+/* Media query for 393px */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .why-choose-us {
+    padding: 50px;
+    background-color: #ededed;
+    text-align: center; /* Center-align text */
+  }
+
+  .line {
+    width: 121.68px;
+    height: 3.09px;
+    background-color: #FFD800;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 32px; /* Reduce font size */
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 36px; /* Adjust line height */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+    gap: 20px; /* Add gap between items */
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add gap between icon and text */
+    position: relative;
+    top: -300px;
+  }
+
+  .item img {
+    width: 24px; /* Reduce image size */
+    height: 24px; /* Reduce image size */
+  }
+
+
+  .icon-1{
+    position: relative;
+  left: 50px;
+  top: 350px; /* Adjust the value to move it downward */
+  
+  width: 208px;
+  height: 400px;
+    
+  }
+  .icon-2{
+    position: relative;
+  right: 50px;
+  top: 350px; /* Adjust the value to move it downward */
+  
+  width: 208px;
+  height: 400px;
+      
+    
+  }
+  .green-button2 {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #0A7212;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    margin-top: 100px;
+    position: relative;
+    top: -400px;
+  }
+
+  /* Animation on hover */
+  .green-button2:hover {
+    animation: buttonHover 0.5s forwards;
+    background-color: #111511;
+  }
+
+  /* Animation on click */
+  .green-button2:active {
+    animation: buttonClick 0.1s forwards;
+  }
+
+  /* Keyframe animations */
+  @keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes buttonClick {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    100% {
+      transform: translateY(2px); /* Move down slightly on click */
+    }
+  }
+}
+

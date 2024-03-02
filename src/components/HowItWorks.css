@@ -1,14 +1,14 @@
 /* HowItWorks.css */
 
 .how-it-works {
-    background-color: #0A7212; 
+    background-color: #0A7212; /* Green background color */
     border-radius: 12px;
     width: 1888px;
     height: 807px;
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    padding: 20px; 
+    justify-content: space-between; /* Align content to the left and right */
+    align-items: flex-start; /* Align content to the top */
+    padding: 20px; /* Add some padding */
 }
 
 .app-image-1 {
@@ -97,12 +97,13 @@
 .work {
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 20px;
-    line-height: 67.02px;
-    position: relative;
-    left: 880px;
-    top: 200px;
+    text-align: right; /* Align text to the right */
+    line-height: 90.02px;
     color: #ffffff;
+    position: relative;
+    left: 830px;
+    top: 150px;
+    
 }
 
 /* HowItWorks.css */
@@ -131,69 +132,81 @@
     right: 0; /* Move the image to the right on hover */
 }
 
-/* iPad Pro */
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-    .background-images{
-        position: relative;
-        right: 200px;
-        
-    }
-    .app-image-1 {
-        position: relative;
-        top: 21px;
-        right: 500px;
-        z-index: 0;
-        transition: right 1s ease; 
-        width: 308px;
-        height: 600px;
-    }
-    
-    .app-image-2 {
-        position: relative;
-        left: -500px;
-        top: 400px;
-        z-index: 2;
-        transition: right 1s ease; 
-       
-        
-    }
-    
-    .content-2 {
-        flex-grow: 1;
+
+/* HowItWorks.css - Viewport size 375 x 667 */
+
+/* General styles */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    .how-it-works {
+        background-color: #0A7212; /* Green background color */
+        border-radius: 12px;
+        width: 100%; /* Adjust width to fit the viewport */
+        height: 400px; /* Adjust height to fit content */
         display: flex;
-        flex-direction: column;
-        align-items: flex-end; 
+        flex-direction: column; /* Arrange items in a column */
+        align-items: center; /* Center items horizontally */
+        padding: 450px; /* Add some padding */
+        
+        
     }
-    
+.content-2{
+    display: flex;
+   
+    position: relative;
+    top: -1700px;
+}
+    /* Line */
+    .line2 {
+        width: 121.68px;
+        height: 3.09px;
+        background-color: #FFD800; 
+        margin-bottom: 20px;
+        position: relative;
+        top: 140px; /* Adjust position as needed */
+    }
+
+    /* Heading */
+    .work {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        line-height: 67.02px;
+        color: #000000;
+    right:  830px;
+    top: 150px;
+    }
+
+    /* Steps */
     .steps {
         display: grid;
-        grid-template-rows: repeat(3, auto); /* Three columns for steps */
-        gap: 20px;
+        gap: 10px;
     }
-    
+
     .step {
-        position: relative;
-        right: 900px;
+        text-align: center; /* Center-align text */
+        
         
     }
-    
+
     .step-number {
         color: #FFA500; /* Orange color for step numbers */
         font-size: 30px;
         font-family: Raleway;
-
+        text-align: center;
+        margin: 10px 0 10px -70px;
     }
-    
+
     .step p {
-        font-size: 18px; /* Adjust paragraph font size */
+        font-size: 14px; /* Adjust paragraph font size */
         line-height: 1.6; /* Adjust paragraph line height */
         color: #FFF;
         font-weight: 400;
         text-align: justify;
-        margin: 0; /* Remove default margin */
+        margin: 10px 0 10px -30px; /* Remove default margin */
         word-wrap: break-word;
     }
-    
+
+    /* Button */
     .orange-button {
         background-color: #FFA500; /* Orange button color */
         color: #ffffff;
@@ -203,67 +216,40 @@
         font-size: 18px;
         cursor: pointer;
         transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
-        position: relative;
-        top: 300px;
-        right: 1150px;
     }
-    
+
     .orange-button:hover {
         background-color: #FF7F00; /* Darker orange on hover */
     }
-    
+
     /* Additional spacing for button */
     .orange-button {
         margin-top: 20px;
     }
-    
-    .line2 {
-        width: 121.68px;
-        height: 3.09px;
-        background-color: #FFD800; 
-        margin-bottom: 20px;
-        position: relative;
-        top: 200px;
-        left: 1040px;
+
+    /* Background images */
+    .background-images {
+        display: flex;
+        flex-direction: column; /* Arrange images in a column */
+        align-items: center; /* Center items horizontally */
     }
-    
-    .work {
-        font-size: 40px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        line-height: 67.02px;
-        position: relative;
-        left: 300px;
-        top: 200px;
-        color: #ffffff;
-        position: relative;
+
+    .app-image-1,
+    .app-image-2 {
+        width: 240px; /* Set width to fit the viewport width */
+        height: auto; /* Adjust height to fit content */
+        margin: 20px 0;
+        
         
     }
-    
-    /* HowItWorks.css */
-    
-    .app-image-1 {
+    .app-image-1{
         position: relative;
-        top: 217px;
-        right: 500px;
-        z-index: 0;
-        transition: right 0.5s ease; /* Apply transition */
+        top: 144px;
+        
     }
-    
-    .app-image-1:hover {
-        right: 0; /* Move the image to the right on hover */
-    }
-    
-    .app-image-2 {
+    .app-image-2{
         position: relative;
-        top: -444px;
-        right: 200px;
-        z-index: 2;
-        transition: right 0.5s ease; /* Apply transition */
+        top: -260px;
+        
     }
-    
-    .app-image-2:hover {
-        right: 0; /* Move the image to the right on hover */
-    }
-  }
-  
+}

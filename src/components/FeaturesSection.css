@@ -50,8 +50,8 @@
       transform: translateY(10px); /* Move down slightly for scrolling effect */
     }
   }
-}
-  
+
+  /* Green button styles */
   .green-button {
     width: 292px;
     height: 66px;
@@ -66,22 +66,22 @@
     margin: 10px auto;
     position: relative;
     top: 50px;
-    left: 500px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
     transition: transform 0.3s ease; /* Add a transition for smooth animation */
   }
-  
+
   /* Animation on hover */
   .green-button:hover {
     animation: buttonHover 0.5s forwards; /* Apply the hover animation */
-    background-color:  #111511;
-    
+    background-color: #111511;
   }
-  
+
   /* Animation on click */
   .green-button:active {
     animation: buttonClick 0.1s forwards; /* Apply the click animation */
   }
-  
+
   /* Keyframe animations */
   @keyframes buttonHover {
     0% {
@@ -94,7 +94,7 @@
       transform: scale(1); /* Return to original scale */
     }
   }
-  
+
   @keyframes buttonClick {
     0% {
       transform: translateY(0); /* Initial position */
@@ -103,7 +103,8 @@
       transform: translateY(2px); /* Move down slightly on click */
     }
   }
-  
+}
+
 /* Media query for ipad pro scrolling */
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   .feature img {
@@ -179,10 +180,96 @@
       transform: translateY(2px); /* Move down slightly on click */
     }
   }
-  
-
 }
-  
-  
-  
-  
+
+/* CSS for viewport 393px */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .features-section {
+    display: grid;
+    grid-template-columns: 1fr; /* Set to one column */
+    gap: 30px;
+    padding: 70px;
+    background-color: #ededed;
+    margin: -20px;
+  }
+
+  .feature {
+    text-align: center;
+  }
+
+  .feature img {
+    width: 72px;
+    height: 72px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Animation on hover */
+  .feature:hover img {
+    animation: imgHover 0.5s forwards; /* Apply the hover animation */
+  }
+
+  /* Keyframe animations */
+  @keyframes imgHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Green button styles */
+  .green-button {
+    width: 292px;
+    height: 66px;
+    font-size: 24px;
+    display: block;
+    padding: 0px 20px;
+    background-color: #0A7212;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 10px auto; /* Center the button horizontally */
+    position: relative; /* Remove absolute positioning */
+    top: 0; /* Reset top value */
+    left: 0; /* Reset left value */
+    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+  }
+
+  /* Animation on hover */
+  .green-button:hover {
+    animation: buttonHover 0.5s forwards; /* Apply the hover animation */
+    background-color: #111511;
+  }
+
+  /* Animation on click */
+  .green-button:active {
+    animation: buttonClick 0.1s forwards; /* Apply the click animation */
+  }
+
+  /* Keyframe animations */
+  @keyframes buttonHover {
+    0% {
+      transform: scale(1); /* Initial scale */
+    }
+    50% {
+      transform: scale(1.1); /* Scale up on hover */
+    }
+    100% {
+      transform: scale(1); /* Return to original scale */
+    }
+  }
+
+  @keyframes buttonClick {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    100% {
+      transform: translateY(2px); /* Move down slightly on click */
+    }
+  }
+}
