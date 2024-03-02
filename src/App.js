@@ -10,6 +10,7 @@ import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
 
 
+
 function App() {
   return (
     <div className="main-content">

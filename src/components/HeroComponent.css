@@ -1,17 +1,20 @@
 
-*{
-  padding: 0;
+body, html {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .hero {
   display: flex;
-  height: 1078px;
+  height: fit-content;
   padding: 120px 292.5px 0px 292.5px;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
-  align-self: stretch;
+  
+  
   
 }
 
@@ -87,13 +90,14 @@
     width: 292px;
     background-color:#ffffff;
     padding: 0px;
+    border-radius: 10px;
 }
 
 .images{
     display: flex;
-    padding: 60px;
     justify-content: center;
-    gap: 0;
+    position: relative;
+    top: 30px;
     
 }
 
@@ -102,25 +106,25 @@
 .left-image {
     position: relative;
     top: 10px;
-    left: 40px;
+    left: 80px;
     width: 304.131px;
     height: 455px;
-    z-index: 1; 
+    z-index: 0; 
 }
 
 .middle-image {
 
     position: relative;
     top: -12px;
-    z-index: 5; 
+    z-index: 2; 
 }
 
 .right-image {
     position: relative;
     top: 10px;
-    left: -40px;
+    left: -80px;
     height: 455px;
-    z-index: 1; 
+    z-index: 0; 
 }
 /* Define a keyframe animation */
 @keyframes zoomIn {
@@ -276,13 +280,12 @@
   
 /* styling the center images */
 .images{
-  position: relative;
-  top: 140px;
+ 
 }
 .left-image {
   position: relative;
-  top: 10px;
-  left: 120px;
+  top: 216px;
+  left: 410px;
   width: 304.131px;
   height: 455px;
   z-index: 1; 
@@ -291,14 +294,15 @@
 .middle-image {
 
   position: relative;
-  top: -12px;
+  top: 70px;
+  left: 300px;
   z-index: 5; 
 }
 
 .right-image {
   position: relative;
-  top: 10px;
-  left: -120px;
+  top: 216px;
+  left: 120px;
   height: 455px;
   z-index: 1; /* Assign a higher z-index than other images */
 }
@@ -430,4 +434,77 @@
   top: 90px;
 }
 
+}
+
+/* CSS for viewport 393px */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  .hero {
+    padding: 20px;
+    background-color: #0A7212; 
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content {
+    max-width: 100%; /* Adjust to fit the viewport */
+  }
+
+  .hero-content h1 {
+    text-align: center;
+    font-size: 32px;
+    height: auto;
+    margin: 0;
+    color: #ffffff; /* Change text color to white */
+  }
+
+  .hero-content p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff; /* Change text color to white */
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .google-btn,
+  .apple-btn {
+    width: 292px;
+    margin: 10px 0;
+  }
+
+  .google-btn img,
+  .apple-btn img {
+    width: 100%;
+    height: auto;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Center the images */
+  .left-image,
+  .middle-image,
+  .right-image {
+    margin: 10px;
+  }
+
+  .green-line {
+    display: none; /* Hide the green line */
+  }
 }

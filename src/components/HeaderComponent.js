@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HeaderComponent.css";
 
 const logoSrc = "./logo.svg"; // Path to your logo image
 
 const HeaderComponent = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <header className="header">
-      <div className="logo">
-        <img src={logoSrc} alt="Logo" />
+      <div className="left-section">
+        <div className="menu-icon" onClick={toggleMenu}>
+          {/* Hamburger menu icon */}
+          <img src="./Vector-handburger.png" alt="Menu" />
+        </div>
+        <div className="logo">
+          {/* Logo image */}
+          <img src={logoSrc} alt="Logo" />
+        </div>
       </div>
-      <nav className="navigation">
+      <nav className={`navigation ${showMenu ? "show-menu" : ""}`}>
+        {/* Navigation list */}
         <ul className="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -21,6 +35,6 @@ const HeaderComponent = () => {
       <button className="download-btn">Download</button>
     </header>
   );
-}
+};
 
 export default HeaderComponent;
