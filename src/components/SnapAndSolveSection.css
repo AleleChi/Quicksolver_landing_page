@@ -102,3 +102,87 @@
     transform: scale(1.1);
     /* Scale up on hover */
 }
+
+/* SnapAndSolveSection.css - Viewport size 393px */
+
+/* General styles */
+@media screen and (max-width: 393px) {
+    .snap-and-solve-section {
+        width: 100%; /* Adjust width to fit the viewport */
+        height: auto; /* Adjust height to fit content */
+        margin: 0;
+        padding: 20px;
+        background-color: rgb(10, 114, 18);
+        background-image: url('./bg-vector.png');
+        display: flex;
+        flex-direction: column; /* Align items in a column */
+        align-items: center; /* Center items horizontally */
+    }
+    
+    .content-snap {
+        z-index: 1;
+        color: #ffffff;
+        max-width: 100%;
+        text-align: justify;
+        padding: 30px;
+        opacity: 1;
+        animation: none; /* Remove animation */
+        margin-top: 20px; /* Add margin between content and images */
+    }
+    
+    .snap-h2 {
+        font-family: Raleway;
+        font-size: 29px; /* Decrease font size for smaller screens */
+        line-height: 50px; /* Adjust line height */
+        padding: 20px;
+        width: 327px;
+        text-align: left; /* Center-align text */
+        overflow-wrap: break-word; /* Wrap long words onto the next line */
+    }
+    
+    .orange-button-4 {
+        margin: 60px 0 0px 0px; /* Adjust margin */
+    width: 270px; /* Set button width */
+    font-size: 18px;
+    text-align: center; /* Center-align button */
+    position: relative;
+    top: 60px;
+    left: 10px;
+        
+    }
+    
+    .background-images-snap {
+        display: flex;
+        flex-direction: column; /* Arrange images in a column */
+        align-items: center; /* Center items horizontally */
+        position: relative;
+        top: 327px;
+        left: 0px;
+       
+    }
+    .left-image-app{
+        display: flex;
+        position: relative;
+        top: 1px;
+    }
+    .right-image-app{
+        display: flex;
+        position: relative;
+        top: -300px;
+    }
+    .center-image-app{
+        display: flex;
+        position: relative;
+        top: -160px;
+    }
+    .left-image-app,
+    .center-image-app,
+    .right-image-app {
+        width: 200px; /* Set image width */
+        height: auto; /* Adjust height to fit content */
+        margin-top: 0px; /* Add margin between images */
+        transform: none; /* Remove hover effect */
+        margin-top: -100px;
+    }
+    
+}

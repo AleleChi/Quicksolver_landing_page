@@ -114,3 +114,52 @@
     margin-left: 337px;
   }
   
+ /* For viewport of 393px */
+@media screen and (max-width: 393px) {
+  .orange-line {
+  
+    width: 20%;
+    margin: 0 auto 30px; /* Center-align the line and add margin below */
+  }
+
+  /* Increase specificity to override any conflicting rules */
+  .blog-header {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center;
+  }
+
+  h4.heading-h {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 200px; /* Add margin below the heading */
+    font-size: 24px; /* Adjust font size */
+    margin-right: -200px;
+  }
+
+  .gr-btn {
+    justify-content: center; /* Center-align the button */
+  }
+
+  .green-border-button {
+    margin-top: -30px; /* Adjust margin to move the button closer to the line */
+    margin-bottom: 20px; /* Add margin below the button */
+  }
+
+  .blog-cards {
+    grid-template-columns: 1fr; /* Display cards in a single column */
+  }
+
+  .shadow-green-button {
+    margin-top: -20px; /* Adjust margin to move the button closer to the cards */
+    margin-left: auto; /* Align the button to the right */
+    margin-right: 20px; /* Add margin on the right side of the button */
+  }
+
+  .learn-more {
+    justify-content: center; /* Center-align the "Learn More" link */
+  }
+
+  .arrow {
+    display: none; /* Hide the arrow at smaller viewports */
+  }
+}

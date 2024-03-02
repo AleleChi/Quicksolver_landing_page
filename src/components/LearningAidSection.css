@@ -75,3 +75,62 @@
     border: 2px solid #ffa500;
   }
   
+  /* LearningAidSection.css - Viewport size 393px */
+
+/* General styles */
+@media screen and (max-width: 393px) {
+  .learning-aid-section {
+      grid-template-columns: 1fr; /* Set one column for smaller screens */
+      grid-template-rows: auto; /* Auto rows */
+      gap: 20px;
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .grid-1 {
+      width: 100%; /* Set full width for each grid item */
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px; /* Add margin between grid items */
+  }
+  
+  .grid-content {
+      padding: 20px; /* Adjust padding for smaller screens */
+      margin: 0; /* Reset margin */
+      font-family: Raleway;
+      line-height: 1.6;
+  }
+  
+  .grid-content-h3 {
+      padding: 20px; /* Adjust padding for smaller screens */
+      margin: 0; /* Reset margin */
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center; /* Center-align text */
+  }
+  
+  .yellow-line {
+      width: 20%;
+      height: 5px;
+      background-color: #ffd800;
+      margin: 10px auto; /* Center-align line */
+  }
+  
+  .grid h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center; /* Center-align text */
+  }
+  
+  .grid p {
+      font-size: 10px; /* Decrease font size for smaller screens */
+      text-align: center; /* Center-align text */
+  }
+  
+  .green-button-2 {
+      width: 100%; /* Set full width for button */
+      padding: 10px 20px;
+      font-size: 20px;
+  }
+}
