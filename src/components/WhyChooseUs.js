@@ -1,9 +1,13 @@
-// WhyChooseUs.js
-
 import React from "react";
 import "./WhyChooseUs.css"; // Import your CSS file for styling
 
 const WhyChooseUs = () => {
+  // Function to handle scrolling to the hero section
+  const scrollToHero = () => {
+    const heroSection = document.getElementById("hero-section");
+    heroSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="why-choose-us">
       <div className="line"></div>
@@ -28,7 +32,7 @@ const WhyChooseUs = () => {
             <img src="./icon-people.png" alt="Icon 3" />
             <p>Loved by 10,000+ Nigerian Science Students</p>
           </div>
-          <button className="green-button2">Download App</button>
+          <button className="green-button2" onClick={scrollToHero}>Download App</button>
         </div>
       </div>
     </section>

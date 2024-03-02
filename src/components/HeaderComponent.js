@@ -10,6 +10,12 @@ const HeaderComponent = () => {
     setShowMenu(!showMenu);
   };
 
+  // Function to handle scrolling to the hero section
+  const scrollToHero = () => {
+    const heroSection = document.getElementById("hero-section");
+    heroSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className="header">
       <div className="left-section">
@@ -32,7 +38,7 @@ const HeaderComponent = () => {
           <li><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
-      <button className="download-btn">Download</button>
+      <button className="download-btn" onClick={scrollToHero}>Download</button>
     </header>
   );
 };

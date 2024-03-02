@@ -1,22 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./HeroComponent.css";
 
 const HeroComponent = () => {
+  // State to hold the current index of the text
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Array of texts to cycle through
+  const texts = [
+    "science problems",
+    "math problems",
+    "chemistry problems",
+    "physics problems",
+    "statistics problems",
+  ];
+
+  // Effect to change the text every few seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000); // Change text every 3 seconds
+
+    // Cleanup function
+    return () => clearInterval(interval);
+  }, []); // Run only once on component mount
+
+  // Function to handle scrolling to the hero section
+  const scrollToHero = () => {
+    const heroSection = document.getElementById("hero-section");
+    heroSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="hero" style={{ backgroundColor: "#064A0C" }}>
+    <section id="hero-section" className="hero" style={{ backgroundColor: "#064A0C" }}>
       <div className="hero-content">
-        <h1>The all-in-one solution to all your science problems</h1>
+        <h1>
+          The all-in-one solution to all your{" "}
+          <span className="science">{texts[currentIndex]}</span>{" "}
+        </h1>
         <p>
           Solve all Maths, Chemistry, Physics, and Statistics Problems in one
           single Calculator
         </p>
         <div className="buttons">
-          <button className="google-btn">
+          <button className="google-btn" onClick={scrollToHero}>
             <a href="">
               <img src="./frame-google-download.png" alt="Google Icon" />
             </a>
           </button>
-          <button className="apple-btn">
+          <button className="apple-btn" onClick={scrollToHero}>
             <a href="">
               <img src="./apple-store.png" alt="Apple Icon" />
             </a>

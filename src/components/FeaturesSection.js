@@ -2,6 +2,12 @@ import React from "react";
 import "./FeaturesSection.css"; // Import your CSS file for styling
 
 const FeaturesSection = () => {
+  // Function to handle scrolling to the hero section
+  const scrollToHero = () => {
+    const heroSection = document.getElementById("hero-section");
+    heroSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="features-section">
       {/* Feature 1 */}
@@ -36,7 +42,9 @@ const FeaturesSection = () => {
         
       </div>
       {/* Green button */}
-      <div className="btn-green"><button className="green-button">Try Quick Solver Now</button></div>
+      <div className="btn-green">
+        <button className="green-button" onClick={scrollToHero}>Try Quick Solver Now</button>
+      </div>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: #0a7212;
+  background-color: #064A0C;
   padding: 50px 20px;
   color: #ffffff;
   display: flex;
@@ -24,8 +24,8 @@
 
 .google-download-button,
 .apple-download-button {
-  background-color: #0a7212;
-  color: #0a7212;
+  background-color: #064A0C;
+  color: #064A0C;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -75,4 +75,46 @@
 
 .footer-column a:hover {
   text-decoration: underline;
+}
+
+/* For viewport of 393px */
+@media screen and (max-width: 393px) {
+  .footer-section {
+    flex-direction: column; /* Arrange items in a column */
+    padding: 20px; /* Adjust padding */
+    align-items: center; /* Center-align items */
+  }
+
+  .footer-column {
+    flex: 1;
+    margin-bottom: 20px; /* Add margin between columns */
+    text-align: center; /* Center-align text */
+  }
+
+  .footer-row {
+    margin-bottom: 20px; /* Add margin between rows */
+  }
+
+  .footer-logo {
+    width: 200px; /* Adjust logo width */
+  }
+
+  .google-download-button,
+  .apple-download-button {
+    display: block; /* Make buttons block-level elements */
+    width: 180px; /* Set button width */
+    margin: 0 auto; /* Center-align the buttons */
+    text-align: center; /* Center-align button text */
+    margin-right: 90px;
+  }
+
+  .social-media-icons img {
+    margin-right: 10px; /* Add margin between social media icons */
+  }
+
+  .horizontal-line {
+    width: 100%; /* Set horizontal line width */
+    border-top: 2px solid #ffffff; /* Adjust line color and style */
+    margin: 20px 0; /* Add margin above and below the line */
+  }
 }

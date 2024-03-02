@@ -61,8 +61,12 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+   
   }
-
+  .logo img {
+    width: 100px;
+    height: 39px;
+  }
   .nav-list {
     display: none;
     flex-direction: column;
@@ -99,8 +103,8 @@
     width: 30px;
     height: auto;
     position: relative;
-    right: -120px;
-    top: 50px;
+    right: -300px;
+    top: 36px;
   }
 
   .show-menu .nav-list {
@@ -110,15 +114,16 @@
   .download-btn {
     background-color: #0a7212;
     color: var(--main-whte, #fcfbfb);
-    font-size: 20px;
+    font-size: 13px;
     padding: 10px 20px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    width: 209px;
-    height: 58px;
+    width:106px;
+    height: 39px;
     position: relative;
-    left: 50px;
+    left: -60px;
+    top: 10px;
   }
 }
 
