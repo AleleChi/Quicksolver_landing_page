@@ -58,17 +58,17 @@ const HeroComponent = () => {
           <img
             className="left-image"
             src="./left-image-app.png"
-            alt="App left image"
+            alt="App left "
           />
           <img
             className="middle-image"
             src="./middle-image-app.png"
-            alt="App hero midlle image"
+            alt="App hero midlle "
           />
           <img
             className="right-image"
             src="./right-image-app.png"
-            alt="App hero right image"
+            alt="App hero right "
           />
         </div>
         <div className="green-line"></div>
