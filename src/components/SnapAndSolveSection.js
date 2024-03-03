@@ -9,9 +9,9 @@ const SnapAndSolveSection = () => {
         <button className="orange-button-4">Snap and Solve Now</button>
       </div>
       <div className="background-images-snap">
-        <img className="left-image-app" src="./left-hand-app-image.png" alt="Left Image" />
-        <img className="center-image-app" src="./middle-app-image.png" alt="Center Image" />
-        <img className="right-image-app" src="./right-app-image.png" alt="Right Image" />
+        <img className="left-image-app" src="./left-hand-app-image.png" alt="app-left" />
+        <img className="center-image-app" src="./middle-app-image.png" alt="app-middle" />
+        <img className="right-image-app" src="./right-app-image.png" alt="app-right" />
       </div>
     </section>
   );
