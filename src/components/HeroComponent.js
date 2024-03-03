@@ -21,6 +21,7 @@ const HeroComponent = () => {
     }, 3000); // Change text every 3 seconds
 
     // Cleanup function
+    // eslint-disable-next-line
     return () => clearInterval(interval);
   }, []); // Run only once on component mount
 
