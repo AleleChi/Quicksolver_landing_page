@@ -16,8 +16,8 @@ const WhyChooseUs = () => {
       </h2>
       <div className="content">
         <div className="images">
-          <img className="icon-1" src="./whychooseus1.png" alt="Image 1" />
-          <img className="icon-2" src="./whychooseus2.png" alt="Image 2" />
+          <img className="icon-1" src="./whychooseus1.png" alt="whychoose us 1" />
+          <img className="icon-2" src="./whychooseus2.png" alt=" why choose us 2" />
         </div>
         <div className="info">
           <div className="item">
