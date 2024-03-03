@@ -23,7 +23,7 @@ const HeroComponent = () => {
     // Cleanup function
     // eslint-disable-next-line
     return () => clearInterval(interval);
-  }, []); // Run only once on component mount
+  }, [texts.length]); // Run only once on component mount
 
   // Function to handle scrolling to the hero section
   const scrollToHero = () => {
