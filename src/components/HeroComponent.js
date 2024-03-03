@@ -44,12 +44,12 @@ const HeroComponent = () => {
         </p>
         <div className="buttons">
           <button className="google-btn" onClick={scrollToHero}>
-            <a href="">
+            <a href="https://play.google.com/store/apps/details?id=com.myapp.quick_solver2">
               <img src="./frame-google-download.png" alt="Google Icon" />
             </a>
           </button>
           <button className="apple-btn" onClick={scrollToHero}>
-            <a href="">
+            <a href="https://apps.apple.com/app/quick-solver/id6474582912">
               <img src="./apple-store.png" alt="Apple Icon" />
             </a>
           </button>
