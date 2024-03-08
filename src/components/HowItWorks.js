@@ -14,6 +14,7 @@ const HowItWorks = () => {
       <h2 className="work">
         How The QuickSolver  App <span className="green">Works</span>
       </h2>
+      
       <div className="background-images">
         <img className="app-image-1" src="./howitworks1.png" alt="How it works" />
         <img className="app-image-2" src="./howitworks2.png" alt="How it works 2" />
@@ -21,6 +22,9 @@ const HowItWorks = () => {
       <div className="content-2">
         <div className="steps">
           <div className="step">
+          <h4 className="work-mobile">
+        How The QuickSolver  App <span className="green-w">Works</span>
+      </h4>
             <span className="step-number">Step 1:</span>
             <p>
               Download the App from PlayStore and presign in, <br /> or sign up if you don't have an account
@@ -45,6 +49,7 @@ const HowItWorks = () => {
         </div>
         <button className="orange-button" onClick={scrollToHero}>Download the App</button>
       </div>
+    
     </section>
   );
 };

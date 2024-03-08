@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import "./HeroComponent.css";
+
 
 const HeroComponent = () => {
   // State to hold the current index of the text

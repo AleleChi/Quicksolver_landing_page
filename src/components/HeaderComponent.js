@@ -1,13 +1,21 @@
 import React, { useState } from "react";
 import "./HeaderComponent.css";
+import { useMediaQuery } from 'react-responsive';
 
 const logoSrc = "./logo.svg"; // Path to your logo image
 
 const HeaderComponent = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // Define mobile screen size
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1023 }); // Define tablet screen size
+ 
+
+  // Function to toggle menu based on screen size and menu state
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    if (isMobile || isTablet) {
+      setShowMenu(!showMenu);
+    }
   };
 
   // Function to handle scrolling to the hero section
@@ -19,10 +27,12 @@ const HeaderComponent = () => {
   return (
     <header className="header">
       <div className="left-section">
-        <div className="menu-icon" onClick={toggleMenu}>
-          {/* Hamburger menu icon */}
-          <img src="./Vector-handburger.png" alt="Menu" />
-        </div>
+        {(isMobile || isTablet) && ( // Display hamburger menu on mobile and tablet screens
+          <div className="menu-icon" onClick={toggleMenu}>
+            {/* Hamburger menu icon */}
+            <img src="./Vector-handburger.png" alt="Menu" />
+          </div>
+        )}
         <div className="logo">
           {/* Logo image */}
           <img src={logoSrc} alt="Logo" />

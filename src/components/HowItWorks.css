@@ -136,7 +136,7 @@
 /* HowItWorks.css - Viewport size 375 x 667 */
 
 /* General styles */
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media screen and (min-width: 375px) and (max-width: 896px) {
     .how-it-works {
         background-color: #0A7212; /* Green background color */
         border-radius: 12px;
@@ -149,11 +149,27 @@
         
         
     }
+    h4.work-mobile{
+        width: 312px;
+        height: 400px;
+        color:  #FFF;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 28.8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: -100px;
+        position: relative;
+        top: 300px;
+    }
+    .green-w{
+        color: #FFF;
+    }
 .content-2{
     display: flex;
    
     position: relative;
-    top: -1700px;
+    top: -2200px;
 }
     /* Line */
     .line2 {
@@ -162,28 +178,33 @@
         background-color: #FFD800; 
         margin-bottom: 20px;
         position: relative;
-        top: 140px; /* Adjust position as needed */
+        top: -10px;
+        
     }
-
-    /* Heading */
+    
     .work {
-        font-size: 40px;
+        font-size: 10px;
         font-weight: 500;
-        margin-bottom: 20px;
-        line-height: 67.02px;
-        color: #000000;
-    right:  830px;
-    top: 150px;
+        text-align: right; /* Align text to the right */
+        line-height: 240px;
+        color: #ffffff;
+        position: relative;
+        right:  -830px;
+        top: 30px;
+        
     }
 
     /* Steps */
     .steps {
         display: grid;
         gap: 10px;
+        margin: 0;
+        font-weight: bold;
     }
 
     .step {
         text-align: center; /* Center-align text */
+       
         
         
     }
@@ -202,8 +223,9 @@
         color: #FFF;
         font-weight: 400;
         text-align: justify;
-        margin: 10px 0 10px -30px; /* Remove default margin */
+        margin: 10px 0px 30px -30px; /* Remove default margin */
         word-wrap: break-word;
+       padding: 10px;
     }
 
     /* Button */
@@ -214,6 +236,7 @@
         border: none;
         border-radius: 5px;
         font-size: 18px;
+        margin-left: 50px;
         cursor: pointer;
         transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
     }
@@ -232,6 +255,8 @@
         display: flex;
         flex-direction: column; /* Arrange images in a column */
         align-items: center; /* Center items horizontally */
+        gap: 16px;
+        margin-right: 20px;
     }
 
     .app-image-1,
@@ -245,11 +270,15 @@
     .app-image-1{
         position: relative;
         top: 144px;
+       
         
     }
     .app-image-2{
         position: relative;
-        top: -260px;
+        top: -312px;
+        margin-right: 340px;
+        width: 225px;
+        height: 400px;
         
     }
 }

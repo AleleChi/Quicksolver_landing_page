@@ -78,7 +78,7 @@
 }
 
 /* For viewport of 393px */
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 896px) {
   .footer-section {
     flex-direction: column; /* Arrange items in a column */
     padding: 20px; /* Adjust padding */

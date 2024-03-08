@@ -55,87 +55,91 @@
   background-color: #052609;
 }
 
-/* Media query for 393px */
-@media screen and (max-width: 393px) {
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-   
+/* Media query for screens up to 767px width (mobile) */
+@media screen and (max-width: 896px) {
+  .menu-icon {
+    display: block;
   }
-  .logo img {
-    width: 100px;
-    height: 39px;
+
+  .navigation {
+    overflow: hidden;
+    position: relative;
+    background-color: #fcfbfb;
+    
   }
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 20px;
-    z-index: 999;
+
+  .navigation .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-list li {
     display: block;
-    margin: 10px 0;
-  }
-
-  .nav-list a {
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  .nav-list li:last-child {
-    margin-bottom: 0;
-  }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menu-icon img {
-    width: 30px;
-    height: auto;
-    position: relative;
-    right: -300px;
-    top: 36px;
-  }
-
-  .show-menu .nav-list {
-    display: block;
+    margin-bottom: 10px;
   }
 
   .download-btn {
-    background-color: #0a7212;
-    color: var(--main-whte, #fcfbfb);
-    font-size: 13px;
+    width: auto;
+    height: auto;
     padding: 10px 20px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    width:106px;
-    height: 39px;
-    position: relative;
-    left: -60px;
-    top: 10px;
+    position: static;
+    margin-top: 10px;
+    left: auto;
+    top: auto;
+  }
+
+  .show-menu .navigation {
+    display: flex;
   }
 }
 
-/* Media query for desktop (1920 x 1024) */
-@media screen and (min-width: 1024px) {
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Media query for screens from 768px to 1023px width (tablet) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-list {
+    text-align: center;
   }
+}
 
+/* Media query for screens from 1024px width and above (desktop) */
+@media screen and (min-width: 1024px) {
   .menu-icon {
     display: none;
+  }
+
+  .navigation {
+    display: flex;
+  }
+}
+
+/* Media query for screens up to 393px width (mobile) */
+@media screen and (max-width: 896px) {
+  .header {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+
+  .menu-icon {
+    display: block; /* Ensure hamburger menu icon is visible */
+    position: relative;
+    left: 350px;
+    top: 40px;
+  }
+.show-menu{
+  display: block;
+}
+.navigation {
+  display: flex !important;
+}
+  .logo img {
+    width: 150px; /* Adjust logo size for smaller screens */
+    height: auto;
+  }
+
+  .download-btn {
+    display: inline-block; /* Ensure download button is visible */
+    margin-left: auto; /* Push download button to the right */
+    position: relative;
+    right: 60px;
   }
 }

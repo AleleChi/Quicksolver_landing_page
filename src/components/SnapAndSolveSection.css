@@ -106,7 +106,7 @@
 /* SnapAndSolveSection.css - Viewport size 393px */
 
 /* General styles */
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 896px) {
     .snap-and-solve-section {
         width: 100%; /* Adjust width to fit the viewport */
         height: auto; /* Adjust height to fit content */
@@ -147,7 +147,7 @@
     text-align: center; /* Center-align button */
     position: relative;
     top: 60px;
-    left: 10px;
+    left: 30px;
         
     }
     
@@ -178,10 +178,10 @@
     .left-image-app,
     .center-image-app,
     .right-image-app {
-        width: 200px; /* Set image width */
-        height: auto; /* Adjust height to fit content */
-        margin-top: 0px; /* Add margin between images */
-        transform: none; /* Remove hover effect */
+        width: 200px; 
+        height: auto; 
+        margin-top: 0px; 
+        transform: none; 
         margin-top: -100px;
     }
     

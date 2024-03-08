@@ -115,7 +115,7 @@
   }
   
  /* For viewport of 393px */
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 896px) {
   .orange-line {
   
     width: 20%;

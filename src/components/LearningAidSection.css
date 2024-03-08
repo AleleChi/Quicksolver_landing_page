@@ -80,7 +80,7 @@
   /* LearningAidSection.css - Viewport size 393px */
 
 /* General styles */
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 896px) {
   .learning-aid-section {
       grid-template-columns: 1fr; /* Set one column for smaller screens */
       grid-template-rows: auto; /* Auto rows */
