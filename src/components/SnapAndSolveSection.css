@@ -132,19 +132,19 @@
     
     .snap-h2 {
         font-family: Raleway;
-        font-size: 29px; /* Decrease font size for smaller screens */
-        line-height: 50px; /* Adjust line height */
+        font-size: 29px; 
+        line-height: 50px;
         padding: 20px;
         width: 327px;
-        text-align: left; /* Center-align text */
-        overflow-wrap: break-word; /* Wrap long words onto the next line */
+        text-align: left; 
+        overflow-wrap: break-word; 
     }
     
     .orange-button-4 {
-        margin: 60px 0 0px 0px; /* Adjust margin */
-    width: 270px; /* Set button width */
+        margin: 60px 0 0px 0px; 
+    width: 270px; 
     font-size: 18px;
-    text-align: center; /* Center-align button */
+    text-align: center; 
     position: relative;
     top: 60px;
     left: 30px;

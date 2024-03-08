@@ -68,15 +68,27 @@
     
   }
 
-  .navigation .nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .navigation .nav-list  {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fef7e5;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;;
   }
+ .nav-list.active{
+  width: 270px;
+ }
 
-  .nav-list li {
-    display: block;
-    margin-bottom: 10px;
+ .nav-list ul{
+  display: flex;
+  flex-direction: column;
+ }
+  .nav-list ul li {
+   margin-left: unset;
+   margin-top: 22px;
   }
 
   .download-btn {
@@ -128,8 +140,12 @@
 .show-menu{
   display: block;
 }
+
 .navigation {
-  display: flex !important;
+  overflow: hidden;
+  position: relative;
+  background-color: whitesmoke;
+  
 }
   .logo img {
     width: 150px; /* Adjust logo size for smaller screens */

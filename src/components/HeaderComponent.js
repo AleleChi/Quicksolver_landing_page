@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import "./HeaderComponent.css";
 import { useMediaQuery } from 'react-responsive';
 
-const logoSrc = "./logo.svg"; // Path to your logo image
-
+const logoSrc = "./logo.svg"; 
 const HeaderComponent = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // Define mobile screen size
-  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1023 }); // Define tablet screen size
+  const isMobile = useMediaQuery({ maxWidth: 768 }); 
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1023 });
  
 
   // Function to toggle menu based on screen size and menu state
@@ -41,7 +40,7 @@ const HeaderComponent = () => {
       <nav className={`navigation ${showMenu ? "show-menu" : ""}`}>
         {/* Navigation list */}
         <ul className="nav-list">
-          <li><a href="#home">Home</a></li>
+          <li><a className="active" href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#faqs">FAQs</a></li>
           <li><a href="#blog">Blog</a></li>
